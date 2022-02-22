@@ -1,15 +1,13 @@
 import { View, StyleSheet } from "react-native";
 import { Headline, Text } from "react-native-paper";
 
-export const Header = ({title}:{title:string}) => {
+export const Header = ({ title }: { title: string }) => {
   return (
     <View style={styles.container}>
-      <Headline style={styles.header}>
-        {title}
-      </Headline>
+      <Headline style={styles.header}>{title}</Headline>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -21,5 +19,4 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginBottom: 12,
   },
- 
 });

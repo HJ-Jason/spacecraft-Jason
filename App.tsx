@@ -1,5 +1,6 @@
 import React from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
+
 import { StarshipFeedScreen } from "./src/screens/StarshipFeedScreen";
 
 const queryClient = new QueryClient();

@@ -1,12 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Button, Colors, Headline, TextInput } from 'react-native-paper';
-import { black, blueA100, white } from 'react-native-paper/lib/typescript/styles/colors';
-
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { Button, Headline, TextInput } from "react-native-paper";
 
 export const LoginScreen = () => {
-
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
 
@@ -16,25 +12,34 @@ export const LoginScreen = () => {
         <Headline style={styles.headline}>Welcome to STARPORT</Headline>
       </View>
       <View style={styles.body}>
-        <TextInput placeholder='Email' placeholderTextColor="black" style={styles.input}
+        <TextInput
+          placeholder="Email"
+          placeholderTextColor="black"
+          style={styles.input}
           autoComplete={true}
           value={email}
-          onChangeText={text => setEmail(text)}
+          onChangeText={(text) => setEmail(text)}
         />
-        <TextInput placeholder='Password' placeholderTextColor="black" style={styles.input}
+        <TextInput
+          placeholder="Password"
+          placeholderTextColor="black"
+          style={styles.input}
           autoComplete={true}
           value={password}
-          onChangeText={text => setPassword(text)}
+          onChangeText={(text) => setPassword(text)}
         />
-        <Button uppercase={false} labelStyle={styles.btntext} style={styles.loginbtn}>Login</Button>
+        <Button
+          uppercase={false}
+          labelStyle={styles.btntext}
+          style={styles.loginbtn}
+        >
+          Login
+        </Button>
         <Text style={styles.text}>Read conditions and Tearms</Text>
-
-      </View>  
+      </View>
     </View>
-
-    
   );
-}
+};
 
 export default LoginScreen;
 
@@ -54,19 +59,19 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 0,
     flex: 2,
   },
-  title:{
+  title: {
     padding: 50,
     backgroundColor: "#7950f2",
     borderWidth: 2,
   },
   headline: {
     color: "white",
-    textAlign: 'center'
+    textAlign: "center",
   },
   input: {
     marginTop: 20,
     width: "70%",
-    backgroundColor:"white",
+    backgroundColor: "white",
     borderWidth: 2,
     color: "black",
     textAlign: "center",
@@ -76,15 +81,14 @@ const styles = StyleSheet.create({
     width: "70%",
     backgroundColor: "#7950f2",
     borderWidth: 2,
-    borderColor: "black"
+    borderColor: "black",
   },
   btntext: {
-    color: "white"
+    color: "white",
   },
   text: {
-    paddingTop:"30%",
+    paddingTop: "30%",
     color: "gray",
     fontSize: 22,
-  }
-  
+  },
 });
