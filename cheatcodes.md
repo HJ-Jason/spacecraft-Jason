@@ -19,16 +19,6 @@
 
     const styles = StyleSheet.create({})
 
-## tsrafce + tab
+## tsrnfe + tab
 
-    import React from 'react'
-
-    type Props = {}
-
-    const LoginScreen = (props: Props) => {
-    return (
-        <div>LoginScreen</div>
-    )
-    }
-
-    export default LoginScreen
+    SVGComponentTransferFunctionElement

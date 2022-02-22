@@ -1,5 +1,5 @@
 import { View, StyleSheet } from "react-native";
-import { Headline, Text } from "react-native-paper";
+import { Headline } from "react-native-paper";
 
 export const Header = ({ title }: { title: string }) => {
   return (

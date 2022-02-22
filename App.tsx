@@ -5,7 +5,7 @@ import { StarshipFeedScreen } from "./src/screens/StarshipFeedScreen";
 
 const queryClient = new QueryClient();
 
-const App = () => {
+export const App = () => {
   return (
     //<LoginScreen />
     //<TermsScreen />
