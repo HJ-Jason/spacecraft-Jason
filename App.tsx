@@ -17,4 +17,5 @@ export const App = () => {
 };
 
 // always export default App otherwise Expo is not happy
+// eslint-disable-next-line import/no-default-export
 export default App;
