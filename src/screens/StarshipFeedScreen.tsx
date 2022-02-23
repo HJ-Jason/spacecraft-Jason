@@ -15,7 +15,7 @@ export const StarshipFeedScreen = () => {
   const { isLoading, isError, data } = useStarships();
 
   if (isLoading) {
-    return <Text>loadingw</Text>;
+    return <Text>loading</Text>;
   }
   if (isError) {
     return <Text>Error</Text>;
